@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'fr.basaile92'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+    testImplementation 'org.mockito:mockito-core:4.8.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:4.8.0'
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.9.0")
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+}
+
+test {
+    useJUnitPlatform()
+}
