@@ -16,6 +16,10 @@ public abstract class SumOfAllDicesCombinationScoreClient
 
   @Override
   public int compute(Hand hand) {
+    return sumOfAllHandDIcesIfAssertionIsTrueOrZero(hand);
+  }
+
+  private int sumOfAllHandDIcesIfAssertionIsTrueOrZero(Hand hand) {
     if (super.checkAssertion(hand)) return getSumOfAllHandDices(hand);
     return 0;
   }

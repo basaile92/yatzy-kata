@@ -10,12 +10,12 @@ public class FullHouseAssertion implements CombinationAssertion {
 
   @Override
   public boolean isChecked(Hand hand) {
-    return checkThatOneElementHas2IterationsAndTheOtherHasThreeIterationInHand(
+    return checkThatOneElementHasTwoIterationsAndTheOtherHasThreeIterationInHand(
       hand
     );
   }
 
-  private boolean checkThatOneElementHas2IterationsAndTheOtherHasThreeIterationInHand(
+  private boolean checkThatOneElementHasTwoIterationsAndTheOtherHasThreeIterationInHand(
     Hand hand
   ) {
     return new HashSet<>(
