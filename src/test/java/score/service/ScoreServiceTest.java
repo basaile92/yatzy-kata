@@ -280,7 +280,8 @@ class ScoreServiceTest {
       new Dice(5)
     );
     int expectedScore = 10;
-    when(fourOfAKindCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
+    when(fourOfAKindCombinationScoreAdapter.compute(hand))
+      .thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithFourOfAKindCombination(hand);
@@ -304,7 +305,8 @@ class ScoreServiceTest {
       new Dice(5)
     );
     int expectedScore = 10;
-    when(threeOfAKindCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
+    when(threeOfAKindCombinationScoreAdapter.compute(hand))
+      .thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithThreeOfAKindCombination(hand);
@@ -328,7 +330,8 @@ class ScoreServiceTest {
       new Dice(5)
     );
     int expectedScore = 10;
-    when(smallStraightCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
+    when(smallStraightCombinationScoreAdapter.compute(hand))
+      .thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithSmallStraightCombination(hand);
@@ -352,7 +355,8 @@ class ScoreServiceTest {
       new Dice(5)
     );
     int expectedScore = 10;
-    when(largeStraightCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
+    when(largeStraightCombinationScoreAdapter.compute(hand))
+      .thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithLargeStraightCombination(hand);
@@ -376,7 +380,8 @@ class ScoreServiceTest {
       new Dice(5)
     );
     int expectedScore = 10;
-    when(fullHouseCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
+    when(fullHouseCombinationScoreAdapter.compute(hand))
+      .thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithFullHouseCombination(hand);
@@ -400,7 +405,8 @@ class ScoreServiceTest {
       new Dice(5)
     );
     int expectedScore = 10;
-    when(onePairCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
+    when(onePairCombinationScoreAdapter.compute(hand))
+      .thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithOnePairCombination(hand);
@@ -424,7 +430,8 @@ class ScoreServiceTest {
       new Dice(5)
     );
     int expectedScore = 10;
-    when(twoPairsCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
+    when(twoPairsCombinationScoreAdapter.compute(hand))
+      .thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithTwoPairsCombination(hand);

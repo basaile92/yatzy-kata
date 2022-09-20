@@ -7,9 +7,7 @@ import score.model.Hand;
 
 public class HandUtils {
 
-  private HandUtils() {
-    throw new IllegalStateException("Hand Utility class must not be created");
-  }
+  private HandUtils() {}
 
   public static long numberOfIterationInHands(Dice value, Hand hand) {
     return hand.dices().stream().filter(value::equals).count();

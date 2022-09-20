@@ -69,17 +69,15 @@ class HandTest {
         Dice fifthDice = new Dice(5);
         Dice sixthDice = new Dice(6);
 
-
-
         // WHEN + THEN
         assertThatThrownBy(() ->
             new Hand(
-                    firstDice,
-                    secondDice,
-                    thirdDice,
-                    fourthDice,
-                    fifthDice,
-                    sixthDice
+              firstDice,
+              secondDice,
+              thirdDice,
+              fourthDice,
+              fifthDice,
+              sixthDice
             )
           )
           .isExactlyInstanceOf(HandInvalidDicesNumberException.class)
