@@ -8,7 +8,7 @@ import score.model.Hand;
 public abstract class SumOfAllDicesCombinationScoreClient
   extends LowerSectionCombinationScoreClient {
 
-  public SumOfAllDicesCombinationScoreClient(
+  protected SumOfAllDicesCombinationScoreClient(
     CombinationAssertion combinationAssertion
   ) {
     super(combinationAssertion);

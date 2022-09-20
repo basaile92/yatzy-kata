@@ -9,7 +9,7 @@ public abstract class LowerSectionCombinationScoreClient
 
   private final CombinationAssertion combinationAssertion;
 
-  public LowerSectionCombinationScoreClient(
+  protected LowerSectionCombinationScoreClient(
     CombinationAssertion combinationAssertion
   ) {
     this.combinationAssertion = combinationAssertion;

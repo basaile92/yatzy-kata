@@ -9,7 +9,7 @@ public abstract class FixedCombinationScoreClient
 
   private final int score;
 
-  public FixedCombinationScoreClient(
+  protected FixedCombinationScoreClient(
     CombinationAssertion combinationAssertion,
     int score
   ) {

@@ -80,7 +80,7 @@ class SumOfAllDicesCombinationScoreClientTest {
         int result = sumOfAllDicesCombinationScoreClient.compute(hand);
 
         // THEN
-        assertThat(result).isEqualTo(0);
+        assertThat(result).isZero();
         verify(combinationAssertion).isChecked(hand);
       }
     }

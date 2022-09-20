@@ -12,7 +12,7 @@ public abstract class StraightAssertion implements CombinationAssertion {
 
   private final List<List<Integer>> possibleFollowingNumbersList;
 
-  public StraightAssertion(int straightNumberOfElements) {
+  protected StraightAssertion(int straightNumberOfElements) {
     checkIfStraightNumberOfElementsIsBetweenTwoAndHandMaxNumberOfElement(
       straightNumberOfElements
     );

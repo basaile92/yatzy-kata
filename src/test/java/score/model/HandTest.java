@@ -37,9 +37,15 @@ class HandTest {
       @Test
       @DisplayName("then it should throw error")
       void thenItShouldThrowError() {
+        // GIVEN
+        Dice firstDice = new Dice(1);
+        Dice secondDice = new Dice(2);
+        Dice thirdDice = new Dice(3);
+        Dice fourthDice = new Dice(4);
+
         // WHEN + THEN
         assertThatThrownBy(() ->
-            new Hand(new Dice(1), new Dice(2), new Dice(3), new Dice(4))
+            new Hand(firstDice, secondDice, thirdDice, fourthDice)
           )
           .isExactlyInstanceOf(HandInvalidDicesNumberException.class)
           .hasMessage(
@@ -55,15 +61,25 @@ class HandTest {
       @Test
       @DisplayName("then it should throw error")
       void thenItShouldThrowError() {
+        // GIVEN
+        Dice firstDice = new Dice(1);
+        Dice secondDice = new Dice(2);
+        Dice thirdDice = new Dice(3);
+        Dice fourthDice = new Dice(4);
+        Dice fifthDice = new Dice(5);
+        Dice sixthDice = new Dice(6);
+
+
+
         // WHEN + THEN
         assertThatThrownBy(() ->
             new Hand(
-              new Dice(1),
-              new Dice(2),
-              new Dice(3),
-              new Dice(4),
-              new Dice(5),
-              new Dice(6)
+                    firstDice,
+                    secondDice,
+                    thirdDice,
+                    fourthDice,
+                    fifthDice,
+                    sixthDice
             )
           )
           .isExactlyInstanceOf(HandInvalidDicesNumberException.class)

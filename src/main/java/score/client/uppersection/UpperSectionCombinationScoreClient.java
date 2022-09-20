@@ -10,7 +10,7 @@ public abstract class UpperSectionCombinationScoreClient
 
   private final int value;
 
-  public UpperSectionCombinationScoreClient(int value) {
+  protected UpperSectionCombinationScoreClient(int value) {
     checkIfNumberIsBetweenDiceMinValueAndDiceMaxValue(value);
     this.value = value;
   }
@@ -31,7 +31,7 @@ public abstract class UpperSectionCombinationScoreClient
       .dices()
       .stream()
       .map(Dice::value)
-      .filter(value -> value == this.value)
+      .filter(diceValue -> diceValue == this.value)
       .reduce(Integer::sum)
       .orElse(0);
   }

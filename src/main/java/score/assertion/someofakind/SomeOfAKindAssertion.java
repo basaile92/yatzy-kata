@@ -11,7 +11,7 @@ public abstract class SomeOfAKindAssertion implements CombinationAssertion {
 
   private final int numberOfAKind;
 
-  public SomeOfAKindAssertion(int numberOfAKind) {
+  protected SomeOfAKindAssertion(int numberOfAKind) {
     checkIfNumberOfAKindIsBetweenTwoAndHandMaxNumberOfElements(numberOfAKind);
     this.numberOfAKind = numberOfAKind;
   }

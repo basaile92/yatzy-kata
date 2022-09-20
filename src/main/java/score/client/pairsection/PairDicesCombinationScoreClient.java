@@ -13,7 +13,7 @@ public abstract class PairDicesCombinationScoreClient
 
   private final int numberOfDicesPair;
 
-  public PairDicesCombinationScoreClient(int numberOfDicesPair) {
+  protected PairDicesCombinationScoreClient(int numberOfDicesPair) {
     checkIfNumberOfDicesPairIsBetweenOneAndHandMaxNumberOfElementDividedByTwo(
       numberOfDicesPair
     );

@@ -87,13 +87,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(chanceCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(chanceCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithChanceCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(chanceCombinationScoreAdapter).compute(hand);
   }
 
@@ -110,13 +111,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(yatzyCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(yatzyCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithYatzyCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(yatzyCombinationScoreAdapter).compute(hand);
   }
 
@@ -133,13 +135,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(acesCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(acesCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithAceCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(acesCombinationScoreAdapter).compute(hand);
   }
 
@@ -156,13 +159,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(twosCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(twosCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithTwosCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(twosCombinationScoreAdapter).compute(hand);
   }
 
@@ -179,13 +183,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(threesCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(threesCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithThreesCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(threesCombinationScoreAdapter).compute(hand);
   }
 
@@ -202,13 +207,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(foursCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(foursCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithFoursCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(foursCombinationScoreAdapter).compute(hand);
   }
 
@@ -225,13 +231,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(fivesCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(fivesCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithFivesCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(fivesCombinationScoreAdapter).compute(hand);
   }
 
@@ -248,13 +255,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(sixesCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(sixesCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithSixesCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(sixesCombinationScoreAdapter).compute(hand);
   }
 
@@ -271,13 +279,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(fourOfAKindCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(fourOfAKindCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithFourOfAKindCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(fourOfAKindCombinationScoreAdapter).compute(hand);
   }
 
@@ -294,13 +303,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(threeOfAKindCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(threeOfAKindCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithThreeOfAKindCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(threeOfAKindCombinationScoreAdapter).compute(hand);
   }
 
@@ -317,13 +327,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(smallStraightCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(smallStraightCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithSmallStraightCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(smallStraightCombinationScoreAdapter).compute(hand);
   }
 
@@ -340,13 +351,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(largeStraightCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(largeStraightCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithLargeStraightCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(largeStraightCombinationScoreAdapter).compute(hand);
   }
 
@@ -363,13 +375,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(fullHouseCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(fullHouseCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithFullHouseCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(fullHouseCombinationScoreAdapter).compute(hand);
   }
 
@@ -386,13 +399,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(onePairCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(onePairCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithOnePairCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(onePairCombinationScoreAdapter).compute(hand);
   }
 
@@ -409,13 +423,14 @@ class ScoreServiceTest {
       new Dice(4),
       new Dice(5)
     );
-    when(twoPairsCombinationScoreAdapter.compute(hand)).thenReturn(10);
+    int expectedScore = 10;
+    when(twoPairsCombinationScoreAdapter.compute(hand)).thenReturn(expectedScore);
 
     // WHEN
     int result = scoreService.computeScoreWithTwoPairsCombination(hand);
 
     // THEN
-    assertThat(result).isEqualTo(result);
+    assertThat(result).isEqualTo(expectedScore);
     verify(twoPairsCombinationScoreAdapter).compute(hand);
   }
 }
